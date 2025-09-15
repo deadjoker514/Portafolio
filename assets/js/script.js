@@ -213,3 +213,26 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const img = document.getElementById('myAvatar');
+    
+    // Prevenir arrastrar la imagen
+    img.addEventListener('dragstart', function(e) {
+        e.preventDefault();
+        return false;
+    });
+    
+    // Prevenir que se abra el menú contextual en dispositivos táctiles
+    img.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        return false;
+    });
+    
+    // Para algunos navegadores móviles, prevenir el menú contextual en touch largo
+    img.addEventListener('touchstart', function(e) {
+        e.preventDefault();
+        return false;
+    }, { passive: false });
+});

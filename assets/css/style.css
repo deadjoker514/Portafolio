@@ -95,7 +95,15 @@
   #style.css
 \*-----------------------------------*/
 
-
+.protected-image {
+    -webkit-user-select: none;  /* Chrome, Safari, Opera */
+    -moz-user-select: none;     /* Firefox */
+    -ms-user-select: none;      /* IE/Edge */
+    user-select: none;          /* Estándar */
+    
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-tap-highlight-color: transparent; /* Eliminar resaltado al tocar */
+}
 
 
 

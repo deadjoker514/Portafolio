@@ -50,7 +50,7 @@ for (let i = 0; i < projectViewBtns.length; i++) {
     if (description) {
       const p = document.createElement('p');
       p.className = 'project-description';
-      p.textContent = description.textContent;
+      p.innerHTML = description.innerHTML;
       projectModalText.appendChild(p);
     }
     openProjectModal();
